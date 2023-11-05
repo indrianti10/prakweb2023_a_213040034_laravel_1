@@ -2,12 +2,12 @@
 
 @section('container')
 
-<h1 class="mb-5">Post Catagories</h1>
+<h1 class="mb-5">Post Categories</h1>
 
-    @foreach ($categories as $catagory)
+    @foreach ($categories as $category)
     <ul>
         <li>
-            <h2><a href="/categories/{{ $catagory->slug }}">{{ $catagory->name }}</a></h2>
+            <h2><a href="/categories/{{ $category->slug }}">{{ $category->name }}</a></h2>
         </li>
     </ul>
     @endforeach
