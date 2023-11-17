@@ -33,7 +33,7 @@
                         </i> My Dashboard</a></li>
                       <li><hr class="dropdown-divider"></li>
 
-                      <li>
+                      <li> {{-- Logout --}}
                         <form action="/logout" method="post">
                           @csrf
                           <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right">
@@ -42,6 +42,7 @@
                       </li>
                     </ul>
                   </li>
+                  
                       @else {{-- jika belum login --}}
                   <li class="nav-item">
                     <a href="/login" class="nav-link {{ ($active == "login" ? 'active' : '') }}"><i class="bi bi-box-arrow-in-right"></i>
